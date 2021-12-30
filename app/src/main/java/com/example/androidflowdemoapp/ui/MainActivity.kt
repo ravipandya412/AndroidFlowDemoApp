@@ -1,4 +1,4 @@
-package com.example.androidflowdemoapp
+package com.example.androidflowdemoapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
