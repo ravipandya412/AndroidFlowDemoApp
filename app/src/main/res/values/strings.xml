@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidFlowDemoApp</string>
+    <string name="comment_id_text">CommentId</string>
+    <string name="name_text">Name</string>
+    <string name="email_text">Email</string>
+    <string name="comment_text">Comment</string>
+
+</resources>
