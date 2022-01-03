@@ -1,4 +1,4 @@
-package com.example.androidflowdemoapp.ui
+package com.example.androidflowdemoapp.utils
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
