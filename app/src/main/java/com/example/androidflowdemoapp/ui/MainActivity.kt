@@ -11,9 +11,11 @@ import com.example.androidflowdemoapp.databinding.ActivityMainBinding
 import com.example.androidflowdemoapp.model.CommentModel
 import com.example.androidflowdemoapp.network.Status
 import com.example.androidflowdemoapp.viewmodel.CommentsViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     // create a CommentsViewModel
     // variable to initialize it later

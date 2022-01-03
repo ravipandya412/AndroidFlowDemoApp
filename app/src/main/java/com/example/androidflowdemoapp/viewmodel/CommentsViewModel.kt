@@ -6,16 +6,16 @@ import com.example.androidflowdemoapp.model.CommentModel
 import com.example.androidflowdemoapp.network.CommentApiState
 import com.example.androidflowdemoapp.network.Status
 import com.example.androidflowdemoapp.repository.CommentsRepository
-import com.example.androidflowdemoapp.utils.AppConfig
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class CommentsViewModel: ViewModel() {
-    private val repository = CommentsRepository(
-        AppConfig.ApiService()
-    )
+@HiltViewModel
+class CommentsViewModel @Inject constructor(val repository: CommentsRepository): ViewModel() {
+
     val commentState = MutableStateFlow(
         CommentApiState(
             Status.LOADING,
